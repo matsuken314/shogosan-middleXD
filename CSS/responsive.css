@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+@media screen and (max-width: 849px){
+  .main-inner{
+    padding-top: 104px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-copy h2{
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  .main-copy p{
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  
+  .main-img{
+    position: static;
+    height: 80%;
+    margin: auto;
+    width: 80%;
+  }
+
+}
+@media screen and (max-width: 810px){
+  .nav__item{
+    margin: auto 16px;
+  }
+}
+@media screen and (max-width: 768px){
+ 
+/*ファーストビューカスタマイズ*/
+.main-inner{
+  padding-top: 104px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main-copy h2{
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.main-copy p{
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.main-img{
+  position: static;
+}
+
+/*//ファーストビューカスタマイズ*/
+/*3つの特徴*/
+.section__ttl{
+  font-size: 1.6rem;
+}
+
+.section__inner h3{
+  font-size: 1.5rem;
+}
+
+.flex__column{
+  flex-direction: column;
+}
+.flex__column--reverse{
+  flex-direction: column-reverse;
+}
+.coding--copy__txtl{
+  font-size: 1.35rem;
+}
+.coding--left__img{
+  margin-bottom: 40px;
+}
+/*//3つの特徴*/
+/*pricesection*/
+.price__table{
+  border-right-width:0 ;
+  overflow-x: auto;
+}
+
+.price__table--inner{
+width: auto;
+min-width: 100%;
+
+}
+.price__table--header,.price__table--text{
+  white-space: nowrap;
+}
+
+.price__table--header:last-child,.price__table--text:last-child{
+  border-right-width:1px;
+}
+/*//pricesection*/
+
+
+/*ブログカスタマイズ*/
+.blog___card{
+  margin-bottom: 40px;
+  margin-right: 0;
+  width: 100%;
+}
+/*//ブログカスタマイズ*/
+
+.footer__flex{
+flex-direction:column ;
+}
+.footer__txts{
+  text-align: center;
+}
+.footer__txts:last-child{
+  margin-left: 0;
+}
+/*pc用ナビゲーション消去*/
+.nav{
+  display: none;
+}
+.none__btn{
+  display: none;
+}
+/*//pc用ナビゲーション消去*/
+.ttl{
+  font-size: 1.4em;
+}
+/*ハンバーガーメニューのボタン*/
+.hamburger__btn {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 16px;
+  margin-right: 4vw;
+  z-index: 20;
+}
+
+
+.hamburger__btn--parts {
+display: block;
+width: 100%;
+height: 2px;
+background-color: #333333;
+position: absolute;
+-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+transition: opacity 0.5s, -webkit-transform 0.5s;
+transition: transform 0.5s, opacity 0.5s;
+transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.hamburger__btn--parts.-top {
+top: 0;
+}
+
+.hamburger__btn--parts.-middle {
+top: 0;
+bottom: 0;
+margin: auto;
+}
+
+.hamburger__btn--parts.-bottom {
+bottom: 0;
+}
+
+.hamburger__btn.active .hamburger__btn--parts.-top {
+-webkit-transform: translateY(10px) rotate(-45deg);
+        transform: translateY(10px) rotate(-45deg);
+}
+
+.hamburger__btn.active .hamburger__btn--parts.-middle {
+opacity: 0;
+}
+
+.hamburger__btn.active .hamburger__btn--parts.-bottom {
+-webkit-transform: translateY(-4px) rotate(45deg);
+        transform: translateY(-4px) rotate(45deg);
+}
+
+.hamburger {
+display: none;
+}
+/*//ハンバーガーメニューのボタン*/
+
+
+/*ハンバーガーメニューのナビ*/
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0.9;
+  background-color: #f4f4f4;
+}
+.hamburger__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.hamburger__list {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  list-style: none;
+  text-align: center;
+}
+.hamburger__list + .hamburger__list {
+  padding-top: 50px;
+}
+.hamburger__link {
+  text-decoration: none;
+  color: #333333;
+}
+/*//ハンバーガーメニューのナビ*/
+.privacyCheck{
+  font-size: 0.85rem;
+}
+}
+/*スマホカスタマイズ終了*/
+
+
+@media screen and (min-width:769px) and (max-width:1190px){
+
+}
+
+@media screen and (min-width: 769px){
+  
+}
