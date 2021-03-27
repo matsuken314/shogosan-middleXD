@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="CSS/animation.css">
   <!--SwiperのCDN導入-->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!--横スクロールヒントのCDN導入-->
+  <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+<script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
     <!--JQuery導入-->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
@@ -147,7 +150,7 @@
       <h2 class="section__ttl anm-list">価格</h2><p class="section__ttl--text anm-list">PRICE
       </p>
       <div class="section__price anm-list">
-        <div class="price__table">
+        <div class="price__table js-scrollable">
           <table class="price__table--inner">
             <tbody class="price__table--body">
               <tr class="price__table--row">
