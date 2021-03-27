@@ -163,7 +163,7 @@ font-size: 14px;
 .hamburger {
   display: none;
 }
-.hamburger-btn {
+.hamburger__btn {
   display: none;
 }
 .hamburger.active {
@@ -256,8 +256,6 @@ z-index: 1000;
   margin-bottom: 54px;
   font-size:28px;
 }
-.coding--copy{
-}
 .coding--copy__txtl{
   font-size: 24px;
   line-height: 2;
@@ -340,6 +338,20 @@ line-height: 1.6;
 .price__table--row:last-child .price__table--text{
   border-bottom-width: 0;
 }
+
+/*スクロールヒント*/
+.js-scrollable td,
+.js-scrollable th {
+  white-space: nowrap;
+  background-color: transparent;
+}
+.js-scrollable table {
+  margin-bottom: 0;
+}
+.js-scrollable {
+  margin-bottom: 30px;
+}
+/*//スクロールヒント*/
 /*プライスセクション終了*/
 /*よくある質問*/
 .questions__box{

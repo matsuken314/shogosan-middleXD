@@ -126,6 +126,7 @@ flex-direction:column ;
 /*ハンバーガーメニューのボタン*/
 .hamburger__btn {
   display: block;
+  cursor: pointer;
   position: relative;
   width: 25px;
   height: 16px;
