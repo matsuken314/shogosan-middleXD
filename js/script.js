@@ -98,9 +98,17 @@ $(document).ready(function () {
         $(".hamburger").removeClass("active");
       }
     });
-    $(".hamburger__list").click(function () {
+    $(".hamburger__link").click(function () {
       $(".hamburger,.hamburger__btn").removeClass("active");
     });
+});
+
+//スクロールヒント
+new ScrollHint('.js-scrollable', {
+  suggestiveShadow: true,
+  i18n: {
+    scrollable: 'スクロールできます'
+  }
 });
 
 /* animation
